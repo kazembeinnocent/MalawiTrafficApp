@@ -46,11 +46,12 @@ import java.util.Locale;
 public class DriverOffence extends AppCompatActivity {
     private TextInputEditText fullNameOfDriver;
 
-    EditText driverOffenceDescription;
+    EditText driverOffenceDescription, edLoactionName;
     private Button updateDriverRecordsBtn;
     RadioGroup offenceRadioGroup;
     RadioButton radioSexButton;
     String longitude, latitude, address, licenceNumber;
+
 
 
 
@@ -73,6 +74,7 @@ public class DriverOffence extends AppCompatActivity {
         driverOffenceDescription = (EditText) findViewById(R.id.otherOffenceDetails);
         driverOffenceToolBar = (Toolbar) findViewById(R.id.driverOffenceToolBar);
         TextView getLicenceNumber = findViewById(R.id.licenseNum);
+        edLoactionName = findViewById(R.id.ed_loaction_name);
 
 //        textView = findViewById(R.id.textView1);
         offenceRadioGroup = findViewById(R.id.offenceRadioGroup);
@@ -228,7 +230,7 @@ public class DriverOffence extends AppCompatActivity {
                driverOffenceRecords = new com.example.trafficmi.DriverOffenceRecords(fullNameDriver, licenceNumber, offenceDescription, radioSexButton.getText().toString(), latitude, longitude, address);
 
            }else {
-               driverOffenceRecords = new com.example.trafficmi.DriverOffenceRecords(fullNameDriver, offenceDescription, radioSexButton.getText().toString(), latitude, longitude, address);
+               driverOffenceRecords = new com.example.trafficmi.DriverOffenceRecords(fullNameDriver, edLoactionName.getText().toString(), offenceDescription, radioSexButton.getText().toString(), latitude, longitude);
 
            }
            referenci.child(fullNameDriver).setValue(driverOffenceRecords);
