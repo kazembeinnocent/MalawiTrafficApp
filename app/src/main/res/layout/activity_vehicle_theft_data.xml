@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.VehicleTheftData">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/accidentSceneToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dim_grey"
+        app:popupTheme="@style/ThemeOverlay.PopupTheme.">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="vEHICLE THEFT"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_margin="20dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="20dp"
+        android:id="@+id/topCardView"
+        android:layout_below="@+id/accidentSceneToolBar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp">
+
+            <TextView
+                android:text="Car Name:"
+                android:id="@+id/carNameTheft"
+                android:paddingTop="20dp"
+                android:padding="15dp"
+                android:textColor="@color/dim_grey"
+                android:textStyle="bold"
+                android:background="#95D1CC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Owner of Car:"
+                android:id="@+id/carOwnerTheft"
+                android:layout_below="@+id/carNameTheft"
+                android:textStyle="bold"
+                android:textColor="@color/dim_grey"
+                android:padding="15dp"
+                android:background="#F4AEF3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Sex:"
+                android:id="@+id/sexTheft"
+                android:layout_below="@+id/carOwnerTheft"
+                android:textColor="@color/dim_grey"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:background="#DFDFDE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Car Registration Number:"
+                android:id="@+id/carRegNumTheft"
+                android:layout_below="@+id/sexTheft"
+                android:padding="15dp"
+                android:textColor="@color/dim_grey"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:background="@color/purple_500"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Car Year of Make:"
+                android:id="@+id/carYearOfMakeTheft"
+                android:layout_below="@+id/carRegNumTheft"
+                android:textStyle="bold"
+                android:background="#FDD7AA"
+                android:textColor="@color/dim_grey"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Color of Car:"
+                android:id="@+id/colorOfCarTheft"
+                android:layout_below="@+id/carYearOfMakeTheft"
+                android:textStyle="bold"
+                android:background="#E5EFC1"
+                android:textColor="@color/dim_grey"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Location:"
+                android:id="@+id/locationTheft"
+                android:layout_below="@+id/colorOfCarTheft"
+                android:textStyle="bold"
+                android:textColor="@color/dim_grey"
+                android:background="#FBD6D2"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Vehicle Theft Details:"
+                android:id="@+id/detailsOfTheft"
+                android:layout_below="@+id/locationTheft"
+                android:textStyle="bold"
+                android:textColor="@color/dim_grey"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

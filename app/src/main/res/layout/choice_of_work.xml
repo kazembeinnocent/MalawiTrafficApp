@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="8dp"
+android:scrollbars="vertical"
+android:scrollbarStyle="outsideOverlay"
+tools:context=".ChoiceOfWork">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+       />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/driverOffenceBtn"
+            android:layout_width="241dp"
+            android:layout_height="74dp"
+            android:text="Driver Offences"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            app:backgroundTint="@color/dim_grey"
+            app:cornerRadius="50dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:layout_below="@+id/driverOffenceBtn"
+            android:id="@+id/accidentSceneBtn"
+            android:layout_width="241dp"
+            android:layout_height="74dp"
+            android:text="Accident Scene"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            app:backgroundTint="@color/dim_grey"
+            app:cornerRadius="80dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:layout_below="@+id/accidentSceneBtn"
+            android:id="@+id/reportVehicleTheftBtn"
+            android:layout_marginTop="40dp"
+            android:layout_width="241dp"
+            android:layout_height="74dp"
+            android:text="Vehicle Theft"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:backgroundTint="@color/dim_grey"
+            app:cornerRadius="50dp"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+
+</RelativeLayout>

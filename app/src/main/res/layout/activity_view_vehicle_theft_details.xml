@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.ViewVehicleTheftDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/accidentSceneToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dim_grey"
+        app:popupTheme="@style/ThemeOverlay.PopupTheme.">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="ACCIDENT SCENE"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/accidentSceneToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_margin="20dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="20dp"
+        android:id="@+id/topCardView"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp">
+
+            <TextView
+                android:id="@+id/carNameTheft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#95D1CC"
+                android:padding="20dp"
+                android:paddingTop="20dp"
+                android:text="Vehicle Registration Number:"
+                android:textColor="@color/dim_grey"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/carOwnerTheft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carNameTheft"
+                android:background="#F4AEF3"
+                android:padding="20dp"
+                android:text="Name of Car:"
+                android:textColor="@color/dim_grey"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sexTheft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carOwnerTheft"
+                android:background="#DFDFDE"
+                android:padding="20dp"
+                android:text="Car Year of Make:"
+                android:textColor="@color/dim_grey"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/carRegNumTheft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sexTheft"
+                android:background="@color/purple_500"
+                android:padding="20dp"
+                android:text="color of Car:"
+                android:textColor="@color/dim_grey"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/carYearOfMakeTheft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/carRegNumTheft"
+                android:padding="20dp"
+                android:text="Other Details:"
+                android:textColor="@color/dim_grey"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

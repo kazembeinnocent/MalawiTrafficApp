@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.ChoiceOfWorkMenu">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_choice_of_work"
+        />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/driverOffenceBtn"
+            android:layout_width="241dp"
+            android:layout_height="74dp"
+            android:text="Driver Offences"
+            android:textAllCaps="false"
+            android:textColor="#ECE8E8"
+            android:textStyle="bold"
+            app:backgroundTint="@color/dim_grey"
+
+            app:cornerRadius="50dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:layout_below="@+id/driverOffenceBtn"
+            android:id="@+id/accidentSceneBtn"
+            android:layout_width="241dp"
+            android:layout_height="74dp"
+            android:text="Accident Scene"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#ECE8E8"
+            app:backgroundTint="@color/dim_grey"
+            app:cornerRadius="50dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:layout_below="@+id/accidentSceneBtn"
+            android:id="@+id/reportVehicleTheftBtn"
+            android:layout_width="241dp"
+            android:layout_height="74dp"
+            android:text="Vehicle Theft"
+            android:textAllCaps="false"
+            android:textColor="#ECE8E8"
+            android:textStyle="bold"
+            app:backgroundTint="@color/dim_grey"
+            app:cornerRadius="50dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:layout_below="@+id/reportVehicleTheftBtn"
+            android:id="@+id/analytics"
+            android:layout_width="241dp"
+            android:layout_height="74dp"
+            android:text="Analytics"
+            android:textAllCaps="false"
+            android:textColor="#ECE8E8"
+            android:textStyle="bold"
+            app:backgroundTint="@color/dim_grey"
+            app:cornerRadius="50dp"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/accident_scene_fab_control"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:text="View"
+        android:src="@drawable/ic_baseline_view_module_24"
+        android:tint="@color/white"
+        android:backgroundTint="@color/dim_grey"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_control_do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab_control_vt"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_vehicle_accident_icon" >
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/fab_control_vt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_above="@+id/accident_scene_fab_control"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="9dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_vehicle_theft_icon2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_control_as"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fab_control_do"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_driver_offence" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "470944026865",
+    "project_id": "trafficmi-64175",
+    "storage_bucket": "trafficmi-64175.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470944026865:android:2665599c30bd4f05fcd950",
+        "android_client_info": {
+          "package_name": "com.example.trafficmi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470944026865-n3qgag2f6f8n9pj01i01ktshooiun29r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5oQ4FxgTDdmdEvEn26CVmH0mZkmg1dT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470944026865-n3qgag2f6f8n9pj01i01ktshooiun29r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

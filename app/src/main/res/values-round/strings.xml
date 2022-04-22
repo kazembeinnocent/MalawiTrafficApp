@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="hello_world">Hello Round World!</string>
+
+    <string-array name="dropDown" tools:ignore="ExtraTranslation">
+        <item>Accidents</item>
+        <item>Drivers</item>
+        <item>Thefts</item>
+    </string-array>
+
+</resources>

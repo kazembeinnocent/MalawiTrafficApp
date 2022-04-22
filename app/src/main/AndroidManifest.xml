@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trafficmi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/triangle"
+        android:label="RoTIre"
+        android:roundIcon="@drawable/triangle"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Views.BarcodeScanner"></activity>
+
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity android:name=".FileGenerator" />
+        <activity android:name=".Views.AnalyticsClass" />
+        <activity android:name=".DriverOffenceData" />
+        <activity android:name=".Views.ViewVehicleTheftDetails" />
+        <activity android:name=".HelpCenter" />
+        <activity android:name=".RoadTrafficRepo" />
+        <activity android:name=".Views.AccidentView" /> <!-- <activity -->
+        <!-- android:name=".Views.AccidentView" -->
+        <!-- android:label="@string/title_activity_accident_view"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity android:name=".Views.ChoiceOfWorkMenu" />
+        <activity android:name=".Views.VehicleTheftData" />
+        <activity
+            android:name=".Views.ViewVehicleTheft"
+            android:parentActivityName=".ReportVehicleTheft" />
+        <activity
+            android:name=".Views.DriverOffenseDetail"
+            android:parentActivityName=".Views.DriverOffence" />
+        <activity android:name=".UpdatedCarRecords" />
+        <activity
+            android:name=".ReportVehicleTheft"
+            android:parentActivityName=".Views.ChoiceOfWorkMenu" />
+        <activity
+            android:name=".Views.AccidentScene"
+            android:parentActivityName=".Views.ChoiceOfWorkMenu" />
+        <activity
+            android:name=".Views.DriverOffence"
+            android:parentActivityName=".Views.ChoiceOfWorkMenu" />
+        <activity android:name=".LogIn" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

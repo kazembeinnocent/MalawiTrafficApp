@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".Views.AnalyticsClass"
+    tools:deviceIds="wear">
+
+ <TableLayout
+
+     android:layout_marginTop="50dp"
+     android:id="@+id/id_for_bottom_content"
+     android:layout_marginBottom="10dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:stretchColumns="1"
+     >
+     <TableRow android:background="#96D7F4" android:padding="10dp" android:layout_marginBottom="5dp">
+         <TextView
+
+             android:gravity="left"
+             android:textStyle="bold"
+             android:text="Driver Offenses"
+             android:padding="3dp" />
+         <TextView
+
+             android:textStyle="bold"
+             android:text="Vehicle Theft"
+             android:gravity="center"
+             android:padding="3dp" />
+         <TextView
+
+             android:gravity="right"
+             android:textStyle="bold"
+             android:text="Accident Scene"
+             android:padding="3dp" />
+     </TableRow>
+
+     <TableRow android:background="#D3EBF6"
+         android:padding="10dp"
+         android:layout_marginBottom="5dp">
+         <TextView
+             android:id="@+id/offences_id"
+             android:gravity="center"
+             android:textStyle="bold"
+             android:text="0"
+             android:padding="3dp" />
+         <TextView
+             android:id="@+id/vehicle_theft_id"
+             android:textStyle="bold"
+             android:text="0"
+             android:gravity="center"
+             android:padding="3dp" />
+         <TextView
+             android:id="@+id/accident_id"
+             android:gravity="center"
+             android:textStyle="bold"
+             android:text="0"
+             android:padding="3dp" />
+     </TableRow>
+ </TableLayout>
+
+<!--    <com.jjoe64.graphview.GraphView-->
+<!--        android:layout_below="@id/id_for_bottom_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dip"-->
+<!--        android:id="@+id/graph" />-->
+<Button
+    android:id="@+id/for_location"
+    android:layout_marginTop="150dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/sample_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/for_location"
+        android:gravity="center"
+        android:hint="locations" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/for_location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp">
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:background="#EF5350"
+            app:layout_constraintStart_toEndOf="@+id/piechart"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offences Frequency"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <org.eazegraph.lib.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" >
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </org.eazegraph.lib.charts.PieChart>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="53dp"
+            android:text="Key"
+            app:layout_constraintStart_toEndOf="@+id/piechart"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Vehicle Theft"
+            app:layout_constraintStart_toEndOf="@+id/view__vehicle_theft"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <View
+            android:id="@+id/view__vehicle_theft"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="32dp"
+            android:background="#66BB6A"
+            app:layout_constraintStart_toEndOf="@+id/piechart"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Driver Offence"
+            app:layout_constraintStart_toEndOf="@+id/view4"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFA726"
+            app:layout_constraintStart_toEndOf="@+id/piechart"
+            app:layout_constraintTop_toBottomOf="@+id/view__vehicle_theft" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="17dp"
+            android:text="Accident Scene"
+            app:layout_constraintStart_toEndOf="@+id/view5"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

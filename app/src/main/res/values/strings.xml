@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TrafficMi</string>
+    <string name="title_activity_accident_view">AccidentView</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="select_data_type">Select data type</string>
+    <string name="title_activity_analytics_class">AnalyticsClass</string>
+</resources>
